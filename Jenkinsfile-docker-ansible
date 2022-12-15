@@ -50,7 +50,7 @@ pipeline {
       agent {
         docker { 
           image 'shinyerin/jenkins-ansible'
-          args '-u 0:0 -e DOCKER_HOST=tcp://3.34.1.178:2375'
+          args '-u 0:0 -e DOCKER_HOST=tcp://172.31.39.132:2375'
         }
       }
       steps {
