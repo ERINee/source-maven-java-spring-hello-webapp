@@ -55,7 +55,7 @@ pipeline {
       }
       steps {
 			ansiblePlaybook(playbook: 'docker-container-deploy.yaml'
-		}
+	  }
     }
   }
 }
