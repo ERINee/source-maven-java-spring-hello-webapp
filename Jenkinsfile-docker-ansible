@@ -49,13 +49,13 @@ pipeline {
     stage('Run Docker Container') {
       agent {
         docker { 
-			image 'shinyerin/jenkins-ansible'
-			args '-u 0:0 -e DOCKER_HOST=tcp://3.34.1.178:2375'
-		}
+          image 'shinyerin/jenkins-ansible'
+          args '-u 0:0 -e DOCKER_HOST=tcp://3.34.1.178:2375'
+        }
       }
       steps {
-			ansiblePlaybook(playbook: 'docker-container-deploy.yaml'
-	  }
+        ansiblePlaybook(playbook: 'docker-container-deploy.yaml')
+      }
     }
   }
 }
