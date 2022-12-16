@@ -77,7 +77,7 @@ spec:
         githubRepo = 'kube-jenkins-repo' //jenkins-kube-deploy
         githubURL = "https://github.com/ERINee/kube-jenkins-repo.git"
         dockerhubId = 'shinyerin' //c1t1d0s7
-        dockerhubRepo = 'hell-world' //hello-world
+        dockerhubRepo = 'hello-world' //hello-world
       }
       steps {
         container('git') {
